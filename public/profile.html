@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Воздушный праздник — пиротехника и гелиевые шары в Челябинске. Самовывоз из пяти магазинов.">
+    <title>Личный кабинет — Воздушный праздник</title>
+    <link rel="stylesheet" href="/app.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <div class="topbar"><div class="container topbar-inner"><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> &nbsp;Челябинск</span><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg> &nbsp;5 магазинов в городе</span><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v12H3zM14 10h4l3 4v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg> &nbsp;Доставка по Челябинску</span><span class="topbar-hours">Ежедневно с 9:00 до 21:00</span></div></div>
+    <header class="site-header"><div class="container header-inner">
+        <a class="brand" href="/" aria-label="Воздушный праздник — главная"><span class="brand-mark" aria-hidden="true"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/><path d="M20 18v4m-2-2h4M3 2v4M1 4h4"/></svg></span><span class="brand-copy"><strong>ВОЗДУШНЫЙ<br>ПРАЗДНИК</strong><small>Пиротехника и гелиевые шары</small></span></a>
+        <form class="site-search" action="/catalog.html" method="get" role="search"><input type="search" name="q" placeholder="Поиск: салюты, фейерверки, шары..." aria-label="Поиск товаров"><button aria-label="Искать" type="submit">⌕</button></form>
+        <div class="header-contact"><span class="contact-icon">☎</span><div><strong>8 (908) 045-80-30</strong><small>Ежедневно с 9:00 до 21:00</small></div></div>
+        <a class="header-action" id="authLink" href="/profile.html"><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></span><small>Войти</small></a>
+        <a class="header-action" href="/checkout.html"><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v12H3zM14 10h4l3 4v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg><em id="cartCount">0</em></span><small>Корзина</small></a>
+    </div></header>
+    <div class="nav-shell"><nav class="container main-nav" aria-label="Основная навигация"><a class="catalog-trigger" href="/catalog.html"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg> Каталог товаров</a><div class="nav-links">                <a class="nav-link " href="/">Главная</a>
+                <a class="nav-link " href="/catalog.html">Каталог</a>
+                <a class="nav-link " href="/shary.html">Гелиевые шары</a>
+                <a class="nav-link " href="/optom.html">Оптовикам</a>
+                <a class="nav-link " href="/#delivery">Доставка и оплата</a>
+                <a class="nav-link " href="/#shops">Магазины</a>
+                <a class="nav-link " href="/#customer-reviews">Отзывы</a></div></nav></div>
+    <main class="container main-content">
+        <div class="page-intro"><span class="eyebrow">ВАШ ПРОФИЛЬ</span><h1>Личный кабинет</h1><p>Вход по паролю, история заказов и контактные данные.</p></div>
+        <section id="loginPanel" class="auth-layout">
+            <div class="auth-intro">
+                <span class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</span>
+                <h1>Рады вас видеть!</h1>
+                <p>Создайте аккаунт для оформления заказов и отслеживания их статуса.</p>
+                <div class="auth-feature"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/><path d="M20 18v4m-2-2h4M3 2v4M1 4h4"/></svg> &nbsp; Надёжный вход по паролю</div>
+                <div class="auth-feature"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/><path d="M20 18v4m-2-2h4M3 2v4M1 4h4"/></svg> &nbsp; Подтверждение почты только при регистрации</div>
+            </div>
+            <div class="panel auth-card">
+                <div class="auth-tabs" role="tablist" aria-label="Вход или регистрация">
+                    <button type="button" id="showRegister" class="auth-tab active" aria-selected="true">Регистрация</button>
+                    <button type="button" id="showLogin" class="auth-tab" aria-selected="false">Войти</button>
+                </div>
+                <form id="loginForm">
+                    <label>Имя <input id="registerName" autocomplete="name" minlength="2" maxlength="80" required placeholder="Ваше имя"></label>
+                    <label>Телефон <input id="registerPhone" type="tel" autocomplete="tel" required placeholder="+7 (950)-729 50 19"></label>
+                    <label>Электронная почта <input id="email" type="email" autocomplete="email" required placeholder="name@example.com"></label>
+                    <label>Пароль <input id="registerPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required placeholder="Не менее 12 символов"></label>
+                    <button class="btn" type="submit">Зарегистрироваться →</button>
+                </form>
+                <form id="passwordLoginForm" hidden>
+                    <label>Электронная почта <input id="loginEmail" type="email" autocomplete="username" required placeholder="name@example.com"></label>
+                    <label>Пароль <input id="loginPassword" type="password" autocomplete="current-password" required placeholder="Ваш пароль"></label>
+                    <button class="btn" type="submit">Войти в аккаунт →</button>
+                    <button type="button" id="forgotPassword" class="text-button">Забыли пароль?</button>
+                </form>
+                <div id="resetPanel" hidden>
+                    <h2>Восстановление пароля</h2>
+                    <p class="muted">Укажи почту аккаунта. Мы отправим шестизначный код.</p>
+                    <form id="resetRequestForm">
+                        <label>Электронная почта <input id="resetEmail" type="email" autocomplete="email" required placeholder="name@example.com"></label>
+                        <button class="btn" type="submit">Получить код</button>
+                    </form>
+                    <form id="resetConfirmForm" hidden>
+                        <label>Код из письма <input id="resetCode" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required placeholder="000000"></label>
+                        <label>Новый пароль <input id="resetPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required placeholder="Не менее 12 символов"></label>
+                        <label>Повтори новый пароль <input id="resetPasswordRepeat" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+                        <button class="btn" type="submit">Сохранить новый пароль</button>
+                    </form>
+                    <p id="resetStatus" class="reset-status" role="status" aria-live="polite"></p>
+                    <button type="button" id="backToLogin" class="text-button">Вернуться ко входу</button>
+                </div>
+                <div id="codePanel" hidden>
+                    <p class="muted">Введите 6 цифр из письма. Код проверится автоматически.</p>
+                    <label>Код подтверждения <input id="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="000000"></label>
+                    <p id="codeStatus" class="muted" aria-live="polite"></p>
+                    <button class="text-button" id="changeEmail" type="button">Изменить данные</button>
+                </div>
+            </div>
+        </section>
+        <section id="accountPanel" hidden><p>Вы вошли как <strong id="accountEmail"></strong></p><div class="content-layout"><form id="profileForm" class="panel"><h2>Мои данные</h2><label>Имя<input id="name" required></label><label>Телефон<input id="phone" type="tel" required></label><button class="btn" type="submit">Сохранить изменения</button></form><div class="panel"><h2>Мои заказы</h2><div id="orders"></div></div></div><button id="logout" class="btn btn-outline logout-button" type="button">Выйти из аккаунта</button></section><p id="message" aria-live="polite"></p>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid">
+        <div><div class="footer-brand"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/><path d="M20 18v4m-2-2h4M3 2v4M1 4h4"/></svg> &nbsp;ВОЗДУШНЫЙ ПРАЗДНИК</div><p>Пиротехника и гелиевые шары<br>в Челябинске</p></div>
+        <div><h3>Каталог</h3><a href="/catalog.html">Все товары</a><a href="/shary.html">Гелиевые шары</a><a href="/optom.html">Оптовым покупателям</a></div>
+        <div><h3>Покупателям</h3><a href="/#delivery">Доставка и оплата</a><a href="/#shops">Наши магазины</a><a href="/profile.html">Личный кабинет</a></div>
+        <div><h3>Контакты</h3><p>8 (908) 045-80-30<br>Ежедневно с 9:00 до 21:00</p></div>
+    </div><div class="container footer-bottom">© 2026 «Воздушный праздник». Челябинск. <span>Информация на сайте не является публичной офертой.</span></div></footer>
+</body>
+</html>

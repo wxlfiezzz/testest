@@ -1,0 +1,17 @@
+{
+  "users": [],
+  "orders": [],
+  "leads": [],
+  "reviews": [],
+  "products": [],
+  "sessions": [],
+  "codes": [],
+  "passwordResets": [],
+  "authAttempts": [
+    {
+      "key": "96bc3c407e3c34e7eb0aa05083b75b64c7c501cb891a8eb802c23d952689e653",
+      "count": 1,
+      "until": 1793603548202
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гелиевые шары - Воздушный праздник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-fire"></i></div>
+                <div class="logo-text">
+                    <span class="logo-title">ВОЗДУШНЫЙ ПРАЗДНИК</span>
+                    <span class="logo-subtitle">пиротехника и шары в Челябинске</span>
+                </div>
+            </a>
+            <div class="header-contact">
+                <a href="tel:+79080458030" class="phone-link" id="headerPhone"><i class="fas fa-phone"></i> 8 (908) 045-80-30</a>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="header-action" id="authBtn"><i class="fas fa-user"></i><span id="authBtnText">Войти</span></a>
+                <button class="header-action" id="wishlistBtn"><i class="fas fa-heart"></i><span>Избранное</span><span class="badge wishlist-count">0</span></button>
+                <button class="header-action" id="cartBtn"><i class="fas fa-shopping-cart"></i><span>Корзина</span><span class="badge cart-count">0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-content">
+            <a href="catalog.html" class="catalog-btn"><i class="fas fa-bars"></i> Каталог товаров</a>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="optom.html">Оптовикам</a></li>
+                <li><a href="shary.html" class="active">Гелиевые шары</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="shary-hero">
+        <div class="container">
+            <div class="shary-hero-inner">
+                <h1>Гелиевые <span>шары</span> с доставкой по Челябинску</h1>
+                <p>Яркие связки, фигуры, цифры, фольгированные шары и композиции под любой праздник. Надуваем гелием — держатся от 12 часов до 3 недель.</p>
+                <a href="#shary-order" class="btn-primary"><i class="fas fa-birthday-cake"></i> Заказать шары</a>
+                <div class="shary-hero-stats">
+                    <div class="stat-item"><span class="stat-number">от 150 ₽</span><span class="stat-label">за шар</span></div>
+                    <div class="stat-item"><span class="stat-number">100+</span><span class="stat-label">видов шаров</span></div>
+                    <div class="stat-item"><span class="stat-number">2 часа</span><span class="stat-label">срочная доставка</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="position:relative;">
+        <div class="shary-delivery">
+            <div class="shary-delivery-item">
+                <i class="fas fa-truck"></i>
+                <div><h4>Доставка по Челябинску</h4><p>При заказе от 3 000 ₽ — бесплатно. Меньше суммы — 300 ₽ по городу.</p></div>
+            </div>
+            <div class="shary-delivery-item">
+                <i class="fas fa-clock"></i>
+                <div><h4>Срочная доставка</h4><p>От 2 часов в день заказа. Уточняйте по телефону — есть свободные слоты.</p></div>
+            </div>
+            <div class="shary-delivery-item">
+                <i class="fas fa-store"></i>
+                <div><h4>Самовывоз</h4><p>Доступен в магазинах с гелиевым оборудованием. Уточняйте адрес при заказе.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shary-categories">
+        <div class="container">
+            <h2 class="section-title">Что мы надуваем</h2>
+            <div class="shary-cats-grid">
+                <a href="#shary-order" class="shary-cat-card">
+                    <div class="shary-cat-icon" style="background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;"><i class="fas fa-circle"></i></div>
+                    <h3>Латексные шары</h3><span class="shary-cat-price">от 150 ₽ / шт</span>
+                </a>
+                <a href="#shary-order" class="shary-cat-card">
+                    <div class="shary-cat-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c);color:#fff;"><i class="fas fa-star"></i></div>
+                    <h3>Фольгированные</h3><span class="shary-cat-price">от 350 ₽ / шт</span>
+                </a>
+                <a href="#shary-order" class="shary-cat-card">
+                    <div class="shary-cat-icon" style="background:linear-gradient(135deg,#4facfe,#00f2fe);color:#fff;"><i class="fas fa-font"></i></div>
+                    <h3>Цифры и буквы</h3><span class="shary-cat-price">от 500 ₽ / шт</span>
+                </a>
+                <a href="#shary-order" class="shary-cat-card">
+                    <div class="shary-cat-icon" style="background:linear-gradient(135deg,#43e97b,#38f9d7);color:#fff;"><i class="fas fa-heart"></i></div>
+                    <h3>Композиции и фигуры</h3><span class="shary-cat-price">от 1 500 ₽</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="shary-why">
+        <div class="container">
+            <h2 class="section-title">Почему заказывают у нас</h2>
+            <div class="shary-why-grid">
+                <div class="shary-why-card"><i class="fas fa-certificate"></i><h3>Качественный гелий</h3><p>Используем только сертифицированный гелий — шары держатся дольше и не темнеют.</p></div>
+                <div class="shary-why-card"><i class="fas fa-palette"></i><h3>Любые цвета</h3><p>Более 100 оттенков латекса, фольга с принтами, хром и конфетти внутри.</p></div>
+                <div class="shary-why-card"><i class="fas fa-clock"></i><h3>Точно в срок</h3><p>Привозим к нужному времени. Можно заказать доставку на утро праздника.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shary-stores">
+        <div class="container">
+            <h2 class="section-title">Где можно забрать шары</h2>
+            <p style="text-align:center;color:#666;max-width:600px;margin:-20px auto 40px;">Гелиевое оборудование есть не во всех магазинах. Уточните при заказе, где удобнее забрать или куда привезти.</p>
+            <div class="stores-grid">
+                <div class="store-card">
+                    <div class="store-icon" style="background:rgba(102,126,234,0.1);"><i class="fas fa-store" style="color:#764ba2;"></i></div>
+                    <h3>Магазин на Ленина</h3><p>г. Челябинск, ул. Ленина, 45</p><p>Ежедневно 9:00 - 21:00</p>
+                    <span class="store-badge helium"><i class="fas fa-check"></i> Шары + пиротехника</span>
+                </div>
+                <div class="store-card">
+                    <div class="store-icon" style="background:rgba(102,126,234,0.1);"><i class="fas fa-store" style="color:#764ba2;"></i></div>
+                    <h3>ТРК «Родник»</h3><p>г. Челябинск, ул. Труда, 203</p><p>Ежедневно 10:00 - 22:00</p>
+                    <span class="store-badge helium"><i class="fas fa-check"></i> Шары + пиротехника</span>
+                </div>
+                <div class="store-card">
+                    <div class="store-icon"><i class="fas fa-store"></i></div>
+                    <h3>Комсомольский проспект</h3><p>г. Челябинск, пр. Комсомольский, 112</p><p>Ежедневно 9:00 - 20:00</p>
+                    <span class="store-badge"><i class="fas fa-info-circle"></i> Только пиротехника</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shary-order" id="shary-order">
+        <div class="container">
+            <div class="shary-order-wrap">
+                <div class="shary-order-info">
+                    <h2>Заказать гелиевые шары</h2>
+                    <p>Оставьте заявку — перезвоним, поможем подобрать композицию и рассчитаем стоимость с доставкой.</p>
+                    <ul class="shary-order-bullets">
+                        <li><i class="fas fa-check-circle"></i> Бесплатная доставка от 3 000 ₽</li>
+                        <li><i class="fas fa-check-circle"></i> Срочный заказ — от 2 часов</li>
+                        <li><i class="fas fa-check-circle"></i> Работаем без выходных</li>
+                        <li><i class="fas fa-check-circle"></i> Оплата картой или наличными</li>
+                    </ul>
+                </div>
+                <form class="optom-form" id="sharyOrderForm">
+                    <h3>Заявка на шары</h3>
+                    <div class="form-group"><label>Ваше имя *</label><input type="text" id="shName" required></div>
+                    <div class="form-group"><label>Телефон *</label><input type="tel" id="shPhone" placeholder="+7-XXX-XXX-XX-XX" required></div>
+                    <div class="form-group">
+                        <label>Что нужно?</label>
+                        <select id="shType">
+                            <option value="latex">Латексные шары</option>
+                            <option value="foil">Фольгированные</option>
+                            <option value="digits">Цифры / буквы</option>
+                            <option value="composition">Композиция / фигура</option>
+                            <option value="other">Другое (уточню по телефону)</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label>Дата и время</label><input type="text" id="shDate" placeholder="Например: 25 декабря, к 10:00"></div>
+                    <div class="form-group"><label>Комментарий</label><textarea id="shComment" rows="3"></textarea></div>
+                    <button type="submit" class="btn-primary btn-block"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col"><div class="footer-logo"><i class="fas fa-fire"></i><span>ВОЗДУШНЫЙ ПРАЗДНИК</span></div></div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <span id="footerPhone">8 (908) 045-80-30</span></li>
+                        <li><i class="fas fa-clock"></i> Ежедневно 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:20px;">© 2026 Воздушный праздник</p>
+        </div>
+    </footer>
+
+    <!-- МОДАЛКА: КОРЗИНА -->
+    <div class="modal" id="cartModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header"><h2>Корзина</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body" id="cartItems"></div>
+            <div class="modal-footer">
+                <div class="cart-total"><span>Итого:</span><span class="total-price">0 ₽</span></div>
+                <button class="btn-primary btn-block" id="checkoutBtn" type="button">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА: ИЗБРАННОЕ -->
+    <div class="modal" id="wishlistModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header"><h2>Избранное</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body" id="wishlistItems"></div>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА: ТОВАР -->
+    <div class="modal" id="productModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content product-modal-content">
+            <div class="modal-header"><h2 id="productModalTitle">Товар</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body" id="productModalBody"></div>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА: ОФОРМЛЕНИЕ ЗАКАЗА -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content checkout-modal-content">
+            <div class="modal-header"><h2>Оформление заказа</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="form-group"><label>Имя *</label><input type="text" id="orderName" required></div>
+                    <div class="form-group"><label>Телефон *</label><input type="tel" id="orderPhone" placeholder="+7-XXX-XXX-XX-XX" required></div>
+                    <div class="form-group">
+                        <label>Способ получения</label>
+                        <select id="deliveryType"><option value="pickup">Самовывоз</option><option value="courier">Доставка по Челябинску</option></select>
+                    </div>
+                    <div class="form-group" id="pickupStoreGroup">
+                        <label>Магазин</label>
+                        <select id="pickupStore"><option value="1">ул. Ленина, 45</option><option value="2">ТРК «Родник», ул. Труда, 203</option><option value="3">пр. Комсомольский, 112</option></select>
+                    </div>
+                    <div class="form-group" id="deliveryAddressGroup" style="display:none;">
+                        <label>Адрес доставки (только Челябинск)</label>
+                        <p class="map-hint">Кликните на карте, чтобы указать точку доставки</p>
+                        <div id="deliveryMap"></div>
+                        <div class="selected-address" id="selectedAddress"><i class="fas fa-map-marker-alt"></i><span id="selectedAddressText"></span></div>
+                        <label class="age-confirm" style="margin-top:15px;">
+                            <input type="checkbox" id="privateHouse">
+                            <span class="age-confirm-box"><i class="fas fa-check"></i></span>
+                            <span class="age-confirm-text">Частный дом</span>
+                        </label>
+                        <div id="apartmentFields" class="form-row" style="margin-top:10px;">
+                            <div class="form-group" style="margin-bottom:0;"><label>Подъезд</label><input type="text" id="orderEntrance"></div>
+                            <div class="form-group" style="margin-bottom:0;"><label>Этаж</label><input type="text" id="orderFloor"></div>
+                            <div class="form-group" style="margin-bottom:0;grid-column:1 / -1;"><label>Квартира / офис</label><input type="text" id="orderApartment"></div>
+                        </div>
+                        <div class="map-fallback" style="margin-top:10px;"><input type="text" id="orderAddress" placeholder="Комментарий к адресу (необязательно)"></div>
+                        <input type="hidden" id="orderCoords" value="">
+                    </div>
+                    <div class="form-group"><label>Оплата</label><select id="paymentType"><option value="card">Картой при получении</option><option value="cash">Наличными</option></select></div>
+                    <label class="age-confirm">
+                        <input type="checkbox" id="ageConfirm" required>
+                        <span class="age-confirm-box"><i class="fas fa-check"></i></span>
+                        <span class="age-confirm-text">Мне есть 18 лет *</span>
+                    </label>
+                    <div class="order-summary">
+                        <h3>Ваш заказ:</h3>
+                        <div id="orderItems"></div>
+                        <div class="order-total"><span>Итого:</span><span class="total-price">0 ₽</span></div>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW: модалки входа/регистрации -->
+    <div class="modal" id="loginModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content" style="max-width:420px;">
+            <div class="modal-header"><h2>Вход</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group"><label>Телефон *</label><input type="tel" id="loginPhone" placeholder="+7-XXX-XXX-XX-XX" required></div>
+                    <div class="form-group"><label>Пароль *</label><input type="password" id="loginPassword" required></div>
+                    <button type="submit" class="btn-primary btn-block">Войти</button>
+                </form>
+                <p style="text-align:center;margin-top:15px;font-size:14px;">Нет аккаунта? <a href="#" id="showRegister" style="color:var(--primary);">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content" style="max-width:460px;">
+            <div class="modal-header"><h2>Регистрация</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-group"><label>Имя *</label><input type="text" id="regName" required minlength="2" autocomplete="name"></div>
+                    <div class="form-group"><label>Телефон * (будет логином)</label><input type="tel" id="regPhone" placeholder="+7-XXX-XXX-XX-XX" required autocomplete="tel"></div>
+                    <div class="form-group"><label>Email * (на него придёт код)</label><input type="email" id="regEmail" placeholder="you@example.com" required autocomplete="email"></div>
+                    <div class="form-group"><label>Пароль * (минимум 6 символов)</label><input type="password" id="regPassword" required minlength="6" autocomplete="new-password"></div>
+                    <div class="form-group"><label>Повторите пароль *</label><input type="password" id="regPassword2" required minlength="6" autocomplete="new-password"></div>
+                    <button type="submit" class="btn-primary btn-block"><i class="fas fa-envelope"></i> Получить код на email</button>
+                </form>
+                <form id="emailVerifyForm" style="display:none;">
+                    <div class="sms-info"><i class="fas fa-envelope-open-text"></i><p>Мы отправили код на<br><strong id="emailDisplay">you@example.com</strong></p></div>
+                    <div class="form-group">
+                        <label>Код из письма *</label>
+                        <input type="text" id="emailCodeInput" inputmode="numeric" maxlength="6" placeholder="000000" class="sms-code-input" style="font-size:24px;letter-spacing:10px;" autocomplete="one-time-code" required>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block"><i class="fas fa-check"></i> Подтвердить</button>
+                    <div class="sms-resend">
+                        <span id="emailResendTimer">Отправить повторно через <strong>60</strong> сек</span>
+                        <button type="button" id="emailResendBtn" style="display:none;" class="sms-resend-btn">Отправить код повторно</button>
+                    </div>
+                    <button type="button" id="emailBackBtn" class="sms-back-btn"><i class="fas fa-arrow-left"></i> Изменить данные</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8e434143-376b-437a-b6eb-13e0eb9b059a&lang=ru_RU"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

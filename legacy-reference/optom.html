@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оптовикам - Воздушный праздник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-fire"></i></div>
+                <div class="logo-text">
+                    <span class="logo-title">ВОЗДУШНЫЙ ПРАЗДНИК</span>
+                    <span class="logo-subtitle">пиротехника и шары в Челябинске</span>
+                </div>
+            </a>
+            <div class="header-contact">
+                <a href="tel:+79080458030" class="phone-link" id="headerPhone">
+                    <i class="fas fa-phone"></i> 8 (908) 045-80-30
+                </a>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="header-action" id="authBtn">
+                    <i class="fas fa-user"></i>
+                    <span id="authBtnText">Войти</span>
+                </a>
+                <button class="header-action" id="wishlistBtn">
+                    <i class="fas fa-heart"></i>
+                    <span>Избранное</span>
+                    <span class="badge wishlist-count">0</span>
+                </button>
+                <button class="header-action" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Корзина</span>
+                    <span class="badge cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-content">
+            <a href="catalog.html" class="catalog-btn">
+                <i class="fas fa-bars"></i> Каталог товаров
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="optom.html" class="active">Оптовикам</a></li>
+                <li><a href="shary.html">Гелиевые шары</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="optom-hero">
+        <div class="container">
+            <div class="optom-hero-inner">
+                <div>
+                    <h1>Оптовые поставки <span>пиротехники</span> по всей России</h1>
+                    <p>Работаем с магазинами, event-агентствами, маркетплейсами и корпоративными клиентами. Специальные условия для крупных закупок.</p>
+                    <a href="#optom-form" class="btn-primary"><i class="fas fa-file-invoice"></i> Получить прайс-лист</a>
+                    <div class="optom-hero-stats">
+                        <div class="stat-item"><span class="stat-number">более 15</span><span class="stat-label">лет на рынке</span></div>
+                        <div class="stat-item"><span class="stat-number">500+</span><span class="stat-label">оптовых клиентов</span></div>
+                        <div class="stat-item"><span class="stat-number">5000+</span><span class="stat-label">позиций в наличии</span></div>
+                    </div>
+                </div>
+                <div class="optom-hero-visual">
+                    <h3><i class="fas fa-star" style="color:var(--accent);"></i> Что вы получаете</h3>
+                    <ul>
+                        <li><i class="fas fa-percent"></i> Скидки до 40% от розничной цены</li>
+                        <li><i class="fas fa-truck"></i> Доставка по РФ транспортными компаниями</li>
+                        <li><i class="fas fa-file-invoice"></i> Полный пакет документов для юрлиц</li>
+                        <li><i class="fas fa-user-tie"></i> Персональный менеджер</li>
+                        <li><i class="fas fa-boxes"></i> Отсрочка платежа для постоянных клиентов</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="optom-discounts">
+        <div class="container">
+            <h2 class="section-title">Оптовые скидки</h2>
+            <div class="discount-table-wrap">
+                <table class="discount-table">
+                    <thead>
+                        <tr><th>Сумма закупки</th><th>Скидка от розницы</th><th>Условия</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td data-label="Сумма закупки">от 50 000 ₽</td><td data-label="Скидка от розницы" class="discount-value">10%</td><td data-label="Условия">Самовывоз или доставка по Челябинску</td></tr>
+                        <tr><td data-label="Сумма закупки">от 200 000 ₽</td><td data-label="Скидка от розницы" class="discount-value">20%</td><td data-label="Условия">Доставка по РФ, отсрочка 7 дней</td></tr>
+                        <tr><td data-label="Сумма закупки">от 500 000 ₽</td><td data-label="Скидка от розницы" class="discount-value">30%</td><td data-label="Условия">Персональный менеджер, отсрочка 14 дней</td></tr>
+                        <tr><td data-label="Сумма закупки">от 1 000 000 ₽</td><td data-label="Скидка от розницы" class="discount-value">до 40%</td><td data-label="Условия">Индивидуальные условия, бонусы</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:60px 0;background:#f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="optom-steps">
+                <div class="step-card"><h3>Заявка</h3><p>Оставляете заявку на сайте или звоните нам. Менеджер связывается в течение 15 минут.</p></div>
+                <div class="step-card"><h3>Подбор</h3><p>Помогаем подобрать ассортимент под ваш регион и целевую аудиторию.</p></div>
+                <div class="step-card"><h3>Договор</h3><p>Заключаем договор, выставляем счёт. Работаем с НДС и без.</p></div>
+                <div class="step-card"><h3>Отгрузка</h3><p>Собираем заказ, отправляем ТК или доставляем своим транспортом.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:60px 0;background:#fff;">
+        <div class="container">
+            <h2 class="section-title">Работаем официально</h2>
+            <div class="optom-docs">
+                <div class="doc-card"><i class="fas fa-file-contract"></i><div><h4>Договор поставки</h4><p>Для юрлиц и ИП</p></div></div>
+                <div class="doc-card"><i class="fas fa-file-invoice"></i><div><h4>Счёт и УПД</h4><p>Полный пакет документов</p></div></div>
+                <div class="doc-card"><i class="fas fa-certificate"></i><div><h4>Сертификаты</h4><p>На всю продукцию</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:60px 0;background:#f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="optom-faq">
+                <div class="faq-item">
+                    <div class="faq-question">Какой минимальный объём закупки?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Оптовые цены действуют от суммы 50 000 ₽. Для меньших объёмов — обычные розничные цены с возможной скидкой по договорённости.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Работаете ли с доставкой по России?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Да, отправляем заказы транспортными компаниями (СДЭК, Деловые Линии, ПЭК) по всей территории РФ. Стоимость рассчитывается индивидуально по габаритам и весу.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Есть ли отсрочка платежа?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Для постоянных клиентов и закупок от 200 000 ₽ возможна отсрочка 7–14 дней. Условия обсуждаются индивидуально.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Даёте ли документы для налоговой?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Да, работаем с полным пакетом: договор, счёт, УПД, сертификаты соответствия на всю продукцию. Возможна работа с НДС и без НДС.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Можно ли заказать пробную партию?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Конечно. Для новых клиентов предлагаем пробную партию с минимальной наценкой, чтобы вы оценили качество продукции и логистику.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="optom-form-section" id="optom-form">
+        <div class="container">
+            <div class="optom-form-wrap">
+                <div class="optom-form-info">
+                    <h2>Получить оптовый прайс-лист</h2>
+                    <p>Заполните форму — менеджер свяжется с вами в течение 15 минут в рабочее время, вышлет актуальный прайс и условия работы.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Актуальные цены и остатки</li>
+                        <li><i class="fas fa-check-circle"></i> Условия доставки в ваш регион</li>
+                        <li><i class="fas fa-check-circle"></i> Персональные скидки под ваш объём</li>
+                        <li><i class="fas fa-check-circle"></i> Консультация по ассортименту</li>
+                    </ul>
+                </div>
+                <form class="optom-form" id="optomForm">
+                    <h3>Заявка на прайс</h3>
+                    <div class="form-group"><label>Название организации *</label><input type="text" id="orgName" required></div>
+                    <div class="form-group"><label>Контактное лицо *</label><input type="text" id="contactPerson" required></div>
+                    <div class="form-group"><label>Телефон *</label><input type="tel" id="optomPhone" placeholder="+7-XXX-XXX-XX-XX" required></div>
+                    <div class="form-group"><label>E-mail</label><input type="email" id="optomEmail"></div>
+                    <div class="form-group">
+                        <label>Предполагаемый объём закупки</label>
+                        <select id="optomVolume">
+                            <option value="small">До 50 000 ₽</option>
+                            <option value="medium">50 000 - 200 000 ₽</option>
+                            <option value="large">200 000 - 500 000 ₽</option>
+                            <option value="wholesale">Более 500 000 ₽</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block"><i class="fas fa-paper-plane"></i> Получить прайс</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo"><i class="fas fa-fire"></i><span>ВОЗДУШНЫЙ ПРАЗДНИК</span></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <span id="footerPhone">8 (908) 045-80-30</span></li>
+                        <li><i class="fas fa-clock"></i> Ежедневно 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:20px;">© 2026 Воздушный праздник</p>
+        </div>
+    </footer>
+
+    <!-- МОДАЛКА: КОРЗИНА -->
+    <div class="modal" id="cartModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header"><h2>Корзина</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body" id="cartItems"></div>
+            <div class="modal-footer">
+                <div class="cart-total"><span>Итого:</span><span class="total-price">0 ₽</span></div>
+                <button class="btn-primary btn-block" id="checkoutBtn" type="button">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА: ИЗБРАННОЕ -->
+    <div class="modal" id="wishlistModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header"><h2>Избранное</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body" id="wishlistItems"></div>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА: ТОВАР -->
+    <div class="modal" id="productModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content product-modal-content">
+            <div class="modal-header"><h2 id="productModalTitle">Товар</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body" id="productModalBody"></div>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА: ОФОРМЛЕНИЕ ЗАКАЗА -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content checkout-modal-content">
+            <div class="modal-header"><h2>Оформление заказа</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="form-group"><label>Имя *</label><input type="text" id="orderName" required></div>
+                    <div class="form-group"><label>Телефон *</label><input type="tel" id="orderPhone" placeholder="+7-XXX-XXX-XX-XX" required></div>
+                    <div class="form-group">
+                        <label>Способ получения</label>
+                        <select id="deliveryType"><option value="pickup">Самовывоз</option><option value="courier">Доставка по Челябинску</option></select>
+                    </div>
+                    <div class="form-group" id="pickupStoreGroup">
+                        <label>Магазин</label>
+                        <select id="pickupStore"><option value="1">ул. Ленина, 45</option><option value="2">ТРК «Родник», ул. Труда, 203</option><option value="3">пр. Комсомольский, 112</option></select>
+                    </div>
+                    <div class="form-group" id="deliveryAddressGroup" style="display:none;">
+                        <label>Адрес доставки (только Челябинск)</label>
+                        <p class="map-hint">Кликните на карте, чтобы указать точку доставки</p>
+                        <div id="deliveryMap"></div>
+                        <div class="selected-address" id="selectedAddress"><i class="fas fa-map-marker-alt"></i><span id="selectedAddressText"></span></div>
+                        <label class="age-confirm" style="margin-top:15px;">
+                            <input type="checkbox" id="privateHouse">
+                            <span class="age-confirm-box"><i class="fas fa-check"></i></span>
+                            <span class="age-confirm-text">Частный дом</span>
+                        </label>
+                        <div id="apartmentFields" class="form-row" style="margin-top:10px;">
+                            <div class="form-group" style="margin-bottom:0;"><label>Подъезд</label><input type="text" id="orderEntrance"></div>
+                            <div class="form-group" style="margin-bottom:0;"><label>Этаж</label><input type="text" id="orderFloor"></div>
+                            <div class="form-group" style="margin-bottom:0;grid-column:1 / -1;"><label>Квартира / офис</label><input type="text" id="orderApartment"></div>
+                        </div>
+                        <div class="map-fallback" style="margin-top:10px;"><input type="text" id="orderAddress" placeholder="Комментарий к адресу (необязательно)"></div>
+                        <input type="hidden" id="orderCoords" value="">
+                    </div>
+                    <div class="form-group"><label>Оплата</label><select id="paymentType"><option value="card">Картой при получении</option><option value="cash">Наличными</option></select></div>
+                    <label class="age-confirm">
+                        <input type="checkbox" id="ageConfirm" required>
+                        <span class="age-confirm-box"><i class="fas fa-check"></i></span>
+                        <span class="age-confirm-text">Мне есть 18 лет *</span>
+                    </label>
+                    <div class="order-summary">
+                        <h3>Ваш заказ:</h3>
+                        <div id="orderItems"></div>
+                        <div class="order-total"><span>Итого:</span><span class="total-price">0 ₽</span></div>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW: модалки входа/регистрации -->
+    <div class="modal" id="loginModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content" style="max-width:420px;">
+            <div class="modal-header"><h2>Вход</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group"><label>Телефон *</label><input type="tel" id="loginPhone" placeholder="+7-XXX-XXX-XX-XX" required></div>
+                    <div class="form-group"><label>Пароль *</label><input type="password" id="loginPassword" required></div>
+                    <button type="submit" class="btn-primary btn-block">Войти</button>
+                </form>
+                <p style="text-align:center;margin-top:15px;font-size:14px;">
+                    Нет аккаунта? <a href="#" id="showRegister" style="color:var(--primary);">Зарегистрироваться</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content" style="max-width:460px;">
+            <div class="modal-header"><h2>Регистрация</h2><button class="modal-close" type="button"><i class="fas fa-times"></i></button></div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-group"><label>Имя *</label><input type="text" id="regName" required minlength="2" autocomplete="name"></div>
+                    <div class="form-group"><label>Телефон * (будет логином)</label><input type="tel" id="regPhone" placeholder="+7-XXX-XXX-XX-XX" required autocomplete="tel"></div>
+                    <div class="form-group"><label>Email * (на него придёт код)</label><input type="email" id="regEmail" placeholder="you@example.com" required autocomplete="email"></div>
+                    <div class="form-group"><label>Пароль * (минимум 6 символов)</label><input type="password" id="regPassword" required minlength="6" autocomplete="new-password"></div>
+                    <div class="form-group"><label>Повторите пароль *</label><input type="password" id="regPassword2" required minlength="6" autocomplete="new-password"></div>
+                    <button type="submit" class="btn-primary btn-block"><i class="fas fa-envelope"></i> Получить код на email</button>
+                </form>
+                <form id="emailVerifyForm" style="display:none;">
+                    <div class="sms-info"><i class="fas fa-envelope-open-text"></i><p>Мы отправили код на<br><strong id="emailDisplay">you@example.com</strong></p></div>
+                    <div class="form-group">
+                        <label>Код из письма *</label>
+                        <input type="text" id="emailCodeInput" inputmode="numeric" maxlength="6" placeholder="000000" class="sms-code-input" style="font-size:24px;letter-spacing:10px;" autocomplete="one-time-code" required>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block"><i class="fas fa-check"></i> Подтвердить</button>
+                    <div class="sms-resend">
+                        <span id="emailResendTimer">Отправить повторно через <strong>60</strong> сек</span>
+                        <button type="button" id="emailResendBtn" style="display:none;" class="sms-resend-btn">Отправить код повторно</button>
+                    </div>
+                    <button type="button" id="emailBackBtn" class="sms-back-btn"><i class="fas fa-arrow-left"></i> Изменить данные</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8e434143-376b-437a-b6eb-13e0eb9b059a&lang=ru_RU"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

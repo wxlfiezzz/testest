@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Воздушный праздник — пиротехника и гелиевые шары в Челябинске. Самовывоз из пяти магазинов.">
+    <title>Каталог — Воздушный праздник</title>
+    <link rel="stylesheet" href="/app.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <div class="topbar"><div class="container topbar-inner"><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> &nbsp;Челябинск</span><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg> &nbsp;5 магазинов в городе</span><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v12H3zM14 10h4l3 4v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg> &nbsp;Доставка по Челябинску</span><span class="topbar-hours">Ежедневно с 9:00 до 21:00</span></div></div>
+    <header class="site-header"><div class="container header-inner">
+        <a class="brand" href="/" aria-label="Воздушный праздник — главная"><span class="brand-mark" aria-hidden="true"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/><path d="M20 18v4m-2-2h4M3 2v4M1 4h4"/></svg></span><span class="brand-copy"><strong>ВОЗДУШНЫЙ<br>ПРАЗДНИК</strong><small>Пиротехника и гелиевые шары</small></span></a>
+        <form class="site-search" action="/catalog.html" method="get" role="search"><input type="search" name="q" placeholder="Поиск: салюты, фейерверки, шары..." aria-label="Поиск товаров"><button aria-label="Искать" type="submit">⌕</button></form>
+        <div class="header-contact"><span class="contact-icon">☎</span><div><strong>8 (908) 045-80-30</strong><small>Ежедневно с 9:00 до 21:00</small></div></div>
+        <a class="header-action" id="authLink" href="/profile.html"><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></span><small>Войти</small></a>
+        <a class="header-action" href="/checkout.html"><span><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v12H3zM14 10h4l3 4v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg><em id="cartCount">0</em></span><small>Корзина</small></a>
+    </div></header>
+    <div class="nav-shell"><nav class="container main-nav" aria-label="Основная навигация"><a class="catalog-trigger" href="/catalog.html"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg> Каталог товаров</a><div class="nav-links">                <a class="nav-link " href="/">Главная</a>
+                <a class="nav-link active" href="/catalog.html">Каталог</a>
+                <a class="nav-link " href="/shary.html">Гелиевые шары</a>
+                <a class="nav-link " href="/optom.html">Оптовикам</a>
+                <a class="nav-link " href="/#delivery">Доставка и оплата</a>
+                <a class="nav-link " href="/#shops">Магазины</a>
+                <a class="nav-link " href="/#customer-reviews">Отзывы</a></div></nav></div>
+    <main class="container main-content">
+        <div class="page-intro"><span class="eyebrow">ВСЁ ДЛЯ ПРАЗДНИКА</span><h1>Каталог товаров</h1><p>Выберите пиротехнику или воздушные шары. Актуальные цены и наличие уточняются при оформлении.</p></div>
+        <div class="filter-bar"><label>Поиск по каталогу<input id="search" type="search" placeholder="Название товара"></label><label>Категория<select id="category"><option value="">Все категории</option><option>Фейерверки</option><option>Шары</option><option>Батареи салютов</option><option>Фонтаны</option><option>Хлопушки</option><option>Цветной дым</option><option>Ракеты</option><option>Петарды</option><option>Римские свечи</option></select></label></div>
+        <div class="grid products-grid" id="products"></div><p id="message" aria-live="polite"></p>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid">
+        <div><div class="footer-brand"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/><path d="M20 18v4m-2-2h4M3 2v4M1 4h4"/></svg> &nbsp;ВОЗДУШНЫЙ ПРАЗДНИК</div><p>Пиротехника и гелиевые шары<br>в Челябинске</p></div>
+        <div><h3>Каталог</h3><a href="/catalog.html">Все товары</a><a href="/shary.html">Гелиевые шары</a><a href="/optom.html">Оптовым покупателям</a></div>
+        <div><h3>Покупателям</h3><a href="/#delivery">Доставка и оплата</a><a href="/#shops">Наши магазины</a><a href="/profile.html">Личный кабинет</a></div>
+        <div><h3>Контакты</h3><p>8 (908) 045-80-30<br>Ежедневно с 9:00 до 21:00</p></div>
+    </div><div class="container footer-bottom">© 2026 «Воздушный праздник». Челябинск. <span>Информация на сайте не является публичной офертой.</span></div></footer>
+</body>
+</html>

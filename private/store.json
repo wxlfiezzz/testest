@@ -1,0 +1,25 @@
+{
+  "users": [],
+  "orders": [],
+  "leads": [],
+  "reviews": [],
+  "products": [],
+  "sessions": [
+    {
+      "tokenHash": "dd785870bf0e6e796a846904f4a266e6bc7e058de821eb2835b890d33e75b22a",
+      "userId": null,
+      "role": "admin",
+      "exp": 1793631449646,
+      "adminVersion": "785b8080be3d00d3676b5e719f3e4091b60cb28d0fb903752ef153142405bb11"
+    }
+  ],
+  "codes": [],
+  "passwordResets": [],
+  "authAttempts": [
+    {
+      "key": "96bc3c407e3c34e7eb0aa05083b75b64c7c501cb891a8eb802c23d952689e653",
+      "count": 1,
+      "until": 1793603548202
+    }
+  ]
+}

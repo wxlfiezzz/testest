@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Панель управления — Воздушный праздник</title>
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/admin-v4.css">
+    <script src="/admin-app.js" defer></script>
+</head>
+<body class="admin-body">
+    <header class="admin-topbar">
+        <div class="container admin-topbar-inner">
+            <a class="admin-logo" href="/"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/><path d="M20 18v4m-2-2h4M3 2v4M1 4h4"/></svg> <strong>Воздушный праздник</strong> <span>Управление</span></a>
+            <a class="admin-website" href="/">← Вернуться на сайт</a>
+        </div>
+    </header>
+    <main class="container admin-main">
+        <div id="message" role="status" aria-live="polite"></div>
+        <section class="panel admin-login" id="login">
+            <span class="eyebrow">ДЛЯ СОТРУДНИКОВ</span>
+            <h1>Вход в панель управления</h1>
+            <p class="muted">Используйте пароль администратора из файла .env.</p>
+            <form id="loginForm">
+                <label>Пароль администратора <input id="password" type="password" autocomplete="current-password" required></label>
+                <button class="btn" type="submit">Войти →</button>
+            </form>
+        </section>
+        <section id="dashboard" hidden>
+            <div class="admin-heading">
+                <div><span class="eyebrow">ПАНЕЛЬ УПРАВЛЕНИЯ</span><h1>Рабочий стол</h1><p class="muted">Товары, заказы, обращения и отзывы — в одном месте.</p></div>
+                <button class="btn btn-outline" id="adminLogout" type="button">Выйти</button>
+            </div>
+            <div class="stats-grid" id="stats"></div>
+            <div class="admin-shell">
+                <nav class="admin-sidebar" aria-label="Разделы панели">
+                    <button class="admin-nav active" data-tab="orders" type="button">▤ &nbsp; Заказы</button>
+                    <button class="admin-nav" data-tab="products" type="button">▦ &nbsp; Товары</button>
+                    <button class="admin-nav" data-tab="leads" type="button">✉ &nbsp; Заявки</button>
+                    <button class="admin-nav" data-tab="reviews" type="button"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.2 6.5 7.2 1-5.2 5.1 1.2 7.2L12 18.4l-6.4 3.4 1.2-7.2-5.2-5.1 7.2-1L12 2Z"/></svg> &nbsp; Отзывы</button>
+                    <button class="admin-nav" data-tab="customers" type="button"><svg class="vp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg> &nbsp; Покупатели</button>
+                </nav>
+                <div class="admin-content">
+                    <section class="admin-section active" data-section="orders">
+                        <div class="admin-section-title"><h2>Заказы</h2><p class="muted">Подтверждайте заказы и меняйте их статусы.</p></div>
+                        <div class="admin-list" id="orders"></div>
+                    </section>
+                    <section class="admin-section" data-section="products" hidden>
+                        <div class="admin-section-title"><h2>Каталог товаров</h2><p class="muted">Добавляйте товары, обновляйте цену и остаток, скрывайте позиции.</p></div>
+                        <details class="panel admin-form-panel"><summary>+ Добавить товар</summary>
+                            <form id="productForm" class="admin-form">
+                                <label>Название <input name="name" required minlength="2"></label>
+                                <label>Категория <select name="category" required><option>Батареи салютов</option><option>Фейерверки</option><option>Фонтаны</option><option>Ракеты</option><option>Петарды</option><option>Римские свечи</option><option>Цветной дым</option><option>Хлопушки</option><option>Шары</option></select></label>
+                                <label>Цена, ₽ <input name="price" type="number" min="0" required></label>
+                                <label>Остаток, шт. <input name="stock" type="number" min="0" required></label>
+                                <label class="wide">Описание <textarea name="description" rows="3"></textarea></label>
+                                <label class="wide check-label"><input name="ageRestricted" type="checkbox"> Товар с возрастными ограничениями</label>
+                                <button class="btn" type="submit">Сохранить товар</button>
+                            </form>
+                        </details>
+                        <div class="admin-list" id="products"></div>
+                    </section>
+                    <section class="admin-section" data-section="leads" hidden>
+                        <div class="admin-section-title"><h2>Заявки</h2><p class="muted">Обращения покупателей и оптовиков.</p></div>
+                        <div class="admin-list" id="leads"></div>
+                    </section>
+                    <section class="admin-section" data-section="reviews" hidden>
+                        <div class="admin-section-title"><h2>Избранные отзывы</h2><p class="muted">Публикуйте проверенные отзывы с указанием источника. Отзывы появляются на сайте после публикации администратором.</p></div>
+                        <details class="panel admin-form-panel"><summary>+ Добавить отзыв из источника</summary>
+                            <form id="reviewForm" class="admin-form">
+                                <label>Автор <input name="author" required></label>
+                                <label>Оценка <input name="rating" type="number" min="1" max="5" required></label>
+                                <label>Источник <select name="source"><option>Яндекс Карты</option><option>2ГИС</option><option>Сайт</option></select></label>
+                                <label>Дата <input name="date" type="date"></label>
+                                <label class="wide">Ссылка на оригинал <input name="sourceUrl" type="url" required></label>
+                                <label class="wide">Текст отзыва <textarea name="text" rows="4" required></textarea></label>
+                                <button class="btn" type="submit">Добавить на модерацию</button>
+                            </form>
+                        </details>
+                        <div class="admin-list" id="reviews"></div>
+                    </section>
+                    <section class="admin-section" data-section="customers" hidden>
+                        <div class="admin-section-title"><h2>Покупатели</h2><p class="muted">Зарегистрированные пользователи.</p></div>
+                        <div class="admin-list" id="customers"></div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
